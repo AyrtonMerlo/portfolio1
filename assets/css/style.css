@@ -1,0 +1,37 @@
+    /* Comentarios en el estilo*/
+
+    /* Selector etiquetas h2*/
+    h2{
+        color: rgb(100, 2, 100);
+        }
+
+    /* Selector clase circular--square */
+    .circular--square {
+        border-radius: 50%;
+    }
+     .texto1{
+         font-size: 20px;
+         color: darkred;
+        }
+    h1{
+        background-color: black;
+        color: crimson;
+        font-size: 35px;
+    }
+         
+p{
+    font-size: 18px;
+}
+    /* Selector ID  */
+    #parrafo1{
+        font-family: sans-serif;
+        font-size: 30px;
+        color: black; 
+    }
+   
+    /* Selector clase circular--square */
+    /*
+    .encabezado--especial {
+        color: green;
+    } 
+        */
