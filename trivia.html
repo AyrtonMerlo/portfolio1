@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var questions = [
+          {
+                prompt: "Cuándo se fundó Roma?\n(a) 753 a. C.\n\ (b) 700 a. C. \n(c) 745 a. C.",
+                answer: "a"
+          },
+          {
+               prompt: "De qué color son las Bananas?\n(a) Negro\n\ (b) Magenta\n(c) Amarillo",
+               answer: "c"
+          },
+          {
+               prompt: "Cuál es la teoria evolutiva mas aceptada en la actualidad?\n(a) Neodarwinismo\n\ (b) Catastrofismo\n(c) Teoria de Lamarck",
+               answer: "a"
+          },
+          {
+            prompt: "Cuál de estos no es un arácnido?\n(a) Cienpies\n\ (b) Ácaro\n(c) Escorpión",
+            answer: "a"
+          },
+          {
+            prompt: "Cuál de estos no es un filósofo pre-socrático?\n(a) Espeusipo\n\ (b) Pitágoras\n(c) Anaximandro",
+            answer: "a"
+        }
+        ];
+        var score = 0;
+
+        for(var i = 0; i < questions.length; i++){
+          var response = window.prompt(questions[i].prompt);
+          if(response == questions[i].answer){
+               score++;
+               alert("Correct!");
+          } else {
+               alert("WRONG!");
+          }
+        }
+        alert("you got " + score + "/" + questions.length);</script>
+</body>
+</html>
+    </script>
+   
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

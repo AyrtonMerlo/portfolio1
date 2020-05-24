@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listado</title>
+</head>
+<body>
+  <fieldset>
+    <legend>Seleccione logros obtenidos</legend>
+    <div>
+      <input type="checkbox" id="vj" name="interest[]" value="vj">
+      <label for="vj">Terminar un videojuego</label>
+    </div>
+    <div>
+      <input type="checkbox" id="dd" name="interest[]" value="dd">
+      <label for="dd">Estar un dia despierto</label>
+    </div>
+    <div>
+      <input type="checkbox" id="cocinar" name="interest[]" value="Cocinar">
+      <label for="cocinar">Aprender a cocinar</label>
+    </div>
+  </fieldset>
+  <input type=button value="Terminar" onClick="mi_alerta()">
+  <script>
+    function mi_alerta () {
+        alert ("Bien hecho, completaste los logros!");
+            }
+  </script>
+   
+   
+</body>
+</html>

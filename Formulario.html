@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+  <form action="blank" method="POST"></form>
+  <h3>Hola! Este formulario es solo de práctica, los datos ingresados no seran almacenados en ningun lugar. Gracias <3.</h3>
+  <label for="name">Nombre (De 4 a 8 caracteres):</label>
+  <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+  <br>
+  <label for="name">Apodo (De 4 a 8 caracteres):</label>
+  <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+  <br>
+  <p>Elija su color favorito:</p>
+ <div>
+   <input type="color" id="head" name="head" value="random">
+   <label for="head">Color Favorito</label>
+ </div>
+ <br>
+ <label for="edad">Ingrese su edad:</label>
+ <input type="number" id="edad" name="edad" min="0" max="100">
+ <p>Elija su bebida favorita:</p>
+<div>
+  <input type="checkbox" id="scales" name="scales"
+         checked>
+  <label for="scales">Agua</label>
+</div>
+
+<div>
+  <input type="checkbox" id="cerveza" name="cerveza">
+  <label for="cerveza">Cerveza</label>
+</div>
+<div>
+  <input type="checkbox" id="gaseosa" name="gaseosa">
+  <label for="gaseosa">Gaseosa</label>
+</div>
+<div>
+  <input type="checkbox" id="jugo" name="jugo">
+  <label for="jugo">Jugo</label>
+  <br>
+  <input type=button value="Terminar" onClick="mi_alerta()">
+  <script>
+    function mi_alerta () {
+        alert ("Gracias por terminar el formulario!");
+            }
+  </script>
+</div>
+</body>
+</html>

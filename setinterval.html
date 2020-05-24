@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SetInterval</title>
+</head>
+<body>
+  <button onclick="myFunction()"><h2>Alerta</h2></button>
+ <script>
+   function myFunction() {
+  setInterval(function(){ alert("Hola profe esto es lo que me salió"); }, 4000);
+}
+   var myVar = setInterval(setColor, 500);
+
+function setColor() {
+  var x = document.body;
+  x.style.backgroundColor = x.style.backgroundColor == "red" ? "green" : "red";
+}
+
+function stopColor() {
+  clearInterval(myVar);
+}
+ </script>
+  
+</body>
+</html>
